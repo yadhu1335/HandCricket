@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>oddoreven</title>
+  </head>
+  <body>
+    <div id="oddoreven">
+      <h3>Choose any one</h3>
+      <button id="odd" onclick="oddeven('odd')">ODD</button>
+      <button id="even" onclick="oddeven('even')">EVEN</button>
+    </div>
+
+    <!-- <div style="display: none">Toss=<span id="Toss"></span></div> -->
+
+    <div>
+      you chose: <span id="OEchoice"></span> <br />
+      <p style="display: none">Toss=<span id="Toss"></span></p>
+    </div>
+    <!-- you choose:odd or even -->
+
+    <div id="cointoss" style="display: none">
+      <h3>Tap on the button</h3>
+      <button id="Coin" onclick="check()">Coin</button>
+      <p>Toss Result : <span id="cointossresult"></span></p>
+    </div>
+
+    <div id="usercorrect" style="display: none">
+      <h4>Which one do u choose</h4>
+      <button id="bat">Batting</button>
+      <button id="bowl">Bowling</button>
+      <p>you chose: <span id="userchoice"></span></p>
+    </div>
+
+    <div id="compcorrect" style="display: none">
+      <h2>Computer Choice is : <span id="computerchoice"></span></h2>
+    </div>
+
+    <a href="game.html"
+      ><button id="nextpage" disabled>Click here to start the match</button></a
+    >
+  </body>
+  <script src="index.js"></script>
+</html>
