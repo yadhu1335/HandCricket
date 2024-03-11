@@ -54,25 +54,20 @@ function check() {
     document.getElementById("computerchoice").innerText = batorbowl;
     computerchoice = true;
   }
-  //   document.getElementById("Coin").disabled = true;
-
-  //   document.getElementById("compcorrect").style.display = "block";
-  //   document.getElementById("computerchoice").innerText = batorbowl;
-
+  window.bob = batorbowl;
   document.getElementById("nextpage").disabled = false;
 }
 
-function nextpgstatus() {
-  if (computerchoice) {
-    if (batorbowl === "bat") {
-      document.getElementById("currently").innerText = "Bowling";
-      console.log("computer choice is " + bowling);
-    } else {
-      document.getElementById("currently").innerText = "Batting";
-      console.log("computer choice is " + bowling);
-    }
-  } else document.getElementById("currently").innerText = batorbowl;
-}
-nextpgstatus();
+// function nextpgstatus() {
+//   if (computerchoice) {
+//     if (batorbowl === "bat") {
+//       document.getElementById("currently").innerText = "Bowling";
+//       console.log("computer choice is " + bowling);
+//     } else {
+//       document.getElementById("currently").innerText = "Batting";
+//       console.log("computer choice is " + bowling);
+//     }
+//   } else document.getElementById("currently").innerText = batorbowl;
+// }
 
-function play(val) {}
+// nextpgstatus();
